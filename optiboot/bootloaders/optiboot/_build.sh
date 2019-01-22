@@ -1,0 +1,5 @@
+#!/bin/bash
+
+GCCROOT=${HOME}/.arduino15/packages/arduino/tools/avr-gcc/5.4.0-atmel3.6.1-arduino2/bin/
+
+make GCCROOT=${GCCROOT} AVR_FREQ=16000000L BAUD_RATE=115200 LED_START_FLASHES=3 LED_DATA_FLASH=1 SUPPORT_EEPROM=1 BIGBOOT=1 LED=B5 atmega328
